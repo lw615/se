@@ -1,0 +1,432 @@
+/*========================================================
+                     Variables
+=========================================================*/
+
+/* shades of green #b5c8c6 #44646d #56737b #71929b */
+/* shades of dark gray #1d2725 */
+/* blue #085390 */
+/* purple complementary to green #7b5673 */
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #dddddd;
+  text-shadow: none; }
+::selection {
+  background: #dddddd;
+  text-shadow: none; }
+/*========================================================
+                      Main Styles
+=========================================================*/
+
+/******************** COMMON STYLES START ********************/
+html {
+	overflow: scroll;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+  	font-size: 16px;
+  	line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    border-top: 5px solid #b5c8c6;
+    -webkit-text-size-adjust: none;
+}
+
+a {
+	text-decoration: none;
+	color: #085390;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #085390;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #44646d;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.content {
+	margin: 0% 5%;
+	overflow: hidden;
+}
+
+.double {
+		max-width: 780px;
+		margin: 0px auto;
+		clear: both;
+}
+
+.doublep {
+		margin: 20px 0px;
+}
+
+p {
+		padding-bottom: 20px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/******************** COMMON STYLES END ********************/
+
+/******************** HEADER START ********************/
+header {
+	overflow: hidden;
+	border-bottom: 1px solid #dddddd;
+}
+
+nav a {
+	text-decoration: none;
+	color: #666666;
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: #666666;
+	border-bottom: 2px solid #56737b;
+}
+
+/***** wide header start *****/
+@media (min-width: 840px) {
+
+.header-maxwidth {
+	max-width: 780px;
+	margin: 0px auto;
+	padding: 0% 5%;
+}
+
+#title-wide {
+	display: inline-block;
+	padding: 0%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	float: left;
+	height: 48px;
+	line-height: 48px;
+}
+
+.nav-wide {
+  display: inline-block;
+  float: right;
+  padding: 0%;
+}
+
+.tab-wide {
+	display: inline-block;
+	margin: 0;
+  padding: 0px 12px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.tab-wide-active {
+	display: inline-block;
+	margin: 0;
+  padding: 0px 12px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+	color: #56737b;
+	border-bottom: 2px solid #56737b;
+}
+
+#title-narrow {
+	display: none;
+}
+
+.nav-narrow {
+	display: none;
+}
+
+.tab-narrow {
+	display: none;
+}
+
+.tab-narrow-active {
+	display: none;
+}
+
+.tab-bullet {
+	display: none;
+}
+
+}
+/***** wide header end *****/
+
+/***** narrow header start ****/
+
+@media (max-width: 839px) {
+
+#title-narrow {
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	margin: auto;
+	height: 48px;
+	line-height: 48px;
+  text-align: center;
+}
+
+.nav-narrow {
+	display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1% 0%;
+}
+
+.tab-narrow {
+  padding: 1% 5%;
+}
+
+.tab-narrow-active {
+  color: #56737b;
+	border-bottom: 2px solid #56737b;
+	padding: 1% 5%;
+}
+
+#title-wide {
+	display: none;
+}
+
+.nav-wide {
+	display: none;
+}
+
+.tab-wide {
+	display: none;
+}
+
+.tab-wide-active {
+	display: none;
+}
+
+.tab-bullet {
+	display: none;
+}
+
+}
+/***** narrow header end ****/
+
+/***** very narrow header start *****/
+@media (max-width: 374px) {
+
+.tab-narrow {
+  padding: 1% 1%;
+}
+
+.tab-narrow-active {
+  color: #56737b;
+	border-bottom: 2px solid #56737b;
+	padding: 1% 1%;
+}
+
+.tab-bullet {
+	display: inline;
+}
+
+}
+/***** very narrow header end *****/
+
+/******************** HEADER END ********************/
+
+.banner {
+	/*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+		url("../images/laptop2_unsplash.jpg") center bottom no-repeat;*/
+	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+		url("../images/laptop2_unsplash.jpg") center bottom no-repeat;
+	background-size: cover;
+	/*overflow: hidden;*/
+	/*box-shadow: inset 0 0 5px rgba(0,0,0,.75);*/
+	height: 200px;
+	margin-top: 3%;
+}
+
+.banner p {
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	padding: 5% 5%;
+}
+
+/******************** INDEX START ********************/
+
+@media (min-width: 840px) {
+
+	.content1 {
+		display: inline-block;
+		float: left;
+		width: 490px;
+	}
+
+	.content2{
+		display: inline-block;
+		margin-right: 40px;
+		float: right;
+		width: 140px;
+	}
+
+	.content2 ul {
+		list-style: disc outside none;
+	}
+
+}
+
+@media (max-width: 839px) {
+
+	.content1 {
+		display: block;
+		float: left;
+	}
+
+	.content2{
+		display: block;
+	}
+
+	.content2 ul {
+		margin: 10px 0px;
+		padding: 0;
+		text-align: center;
+	}
+
+	.content2 li {
+		display: inline;
+		white-space: nowrap;
+	}
+
+	.content2 li:before {
+		content: '\00a0\2022\00a0\00a0';
+	}
+	/*
+	.content2 li:first-child:before {
+		content: '';
+	}
+	*/
+
+	.content2 li:last-child:after {
+		content: '\00a0\2022';
+	}
+
+}
+/******************** INDEX END ********************/
+
+/******************** SERVICES START ********************/
+
+.services-list {
+		margin-left: 20px;
+}
+
+.services-list ul {
+		list-style: disc outside none;
+}
+
+@media (min-width: 840px) {
+	.services-content {
+		width: 780px;
+		margin: 0px auto;
+	}
+}
+
+
+
+
+/******************** SERVICES END ********************/
+
+/******************** FAQ START ********************/
+
+.faq-question {
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.faq-answer {
+	margin-bottom: 20px;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 50px;
+}
+/******************** FAQ END ********************/
+
+/******************** ABOUT START ********************/
+
+
+@media (min-width: 840px) {
+
+	.about-content1 {
+		display: inline-block;
+		float: left;
+		width: 490px;
+	}
+
+	.about-content2 {
+		display: inline-block;
+		float: right;
+		width: 220px;
+	}
+
+	.about-content2 ul {
+		list-style-type: disc;
+	}
+}
+
+@media (max-width: 839px) {
+
+	.about-content1 {
+		display: block;
+	}
+
+	.about-content2 {
+		margin-left: 20px;
+	}
+
+	.about-content2 ul {
+		list-style: disc outside none;
+	}	
+
+}
+
+/******************** ABOUT END ********************/
+
+
+footer {
+	overflow: hidden;
+	border-top: 1px solid #dddddd;
+	color: rgba(0,0,0, 0.54);
+	padding: 0% 5%;
+	margin: 20px 0px 0px 0px;
+	font-size: 14px;
+}
+
+.footer-content {
+	margin: 2px auto;
+	max-width: 780px;
+}
